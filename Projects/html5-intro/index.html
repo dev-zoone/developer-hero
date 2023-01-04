@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Mela</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            width: 90vw;
+            height: 90vh;
+            margin: 2rem auto;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+        }
+        nav ul li {
+            margin-right: 2rem;
+        } 
+        nav ul li a {
+            color: #345334;
+        }
+        nav li .dropdown {
+            display: none;
+            position: absolute;
+            background: #ff425f;
+            padding: 1rem 0.5rem;
+            line-height: 2rem;
+        }
+        nav li:hover .dropdown {
+            display: block;
+            /* background: 345334; */
+        }
+        .dropdown li, a:hover {
+            width: 100%;
+            background: #198abe;
+            color: #ffff;
+        }
+        .user-form {
+            display: grid;
+            margin: 0.5rem 1rem;
+            grid-template-columns: auto auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 1rem;
+
+        }
+        [type="email"] {
+            margin-bottom: 0;
+        }
+        fieldset {
+            margin-bottom: 0.5rem;
+        }
+        
+        #personal-info {
+            display: flex;
+            font-size: 2rem;
+            gap: 1rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input {
+            width: 250px;
+            height: 30px;
+            /* text-align: right; */
+        }
+        ::placeholder {
+            font-size: 1rem;
+            text-align: right;
+        }
+
+        .button {
+            outline: none;
+            border: none;
+            margin-left: 1rem;
+            padding: 0.5rem 1.5rem;
+            background: #34ee;
+            border-radius: 0.25rem;
+        }
+
+        /* #choos-option {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">
+                        HOME
+                    </a></li>
+                <li>
+                    <a href="">
+                        ABOUT
+                    </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="">PHOTO</a>
+                    </li>
+                    <li>
+                        <a href="">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="">TOUR</a>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <a href="">
+                        CONTACT
+                    </a></li>
+                <li>
+                    <a href="">
+                        BLOG
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Come Heir To Pitha Mela</h1>
+
+        <form action="">
+            <fieldset>
+                <legend>Pithass Stor</legend>
+                <section class="user-form">
+                    <section id="personal-info" >
+                        <label for="name">Your name
+                            <input type="name" id="name" placeholder="Your Name">
+                        </label>
+                        <label for="phone">Your Phon
+                            <input type="number" id="phone" placeholder="Your Phone">
+                        </label>
+                        <label for="email">Your Email
+                            <input type="email" id="email" placeholder="Your email">
+                        </label>
+                    </section>
+        
+                    <section id="choos-option">
+                        <fieldset>
+                            <legend>Choose Your Pitha</legend>
+                            <label for="pitha">
+                                <input type="radio" name="pitha" id="pitha">
+                                Chitoi
+                            </label>
+                            <label for="pitha">
+                                <input type="radio" name="pitha" id="pitha">
+                                Vapa
+                            </label>
+                            <label for="pitha">
+                                <input type="radio" name="pitha" id="pitha">
+                                Kuli
+                            </label>
+                        </fieldset>
+            
+                        <fieldset>
+                            <legend>Choose Vortas</legend>
+                            <label for="vorta">
+                                <input type="checkbox" name="shorisha" id="shorisha">
+                                Shorisha
+                            </label>
+                            <label for="vorta">
+                                <input type="checkbox" name="badam" id="vorta">
+                                badam
+                            </label>
+                            <label for="vorta">
+                                <input type="checkbox" name="kalozira" id="vorta">
+                                Kalozira
+                            </label>
+                        </fieldset>
+            
+                        <legend>Special Instruction</legend>
+                            <textarea name="" id="" cols="60" rows="3"></textarea>
+                    </section>
+                </section>
+            </fieldset>
+                    
+            <input type="reset" class="button" value="Reset">
+        <input type="submit" class="button" value="Submit">
+        </form>
+        
+    </main>
+    
+</body>
+</html>
