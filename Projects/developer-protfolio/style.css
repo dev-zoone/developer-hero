@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* header stard */
+.header {
+    min-height: 100vh;
+    background-image: url(./images/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: left 620px top 250px;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+.header__nav-bar {
+    width: 80%;
+    margin: 3% auto;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/* nav bar logo */
+.header__nav-bar__logo h2 {
+    font-size: 45px;
+    color: #181818;
+    font-weight: 800;
+}
+#nav-title {
+    color: #FD6E0A;
+}
+/* nav bar menu start */
+.header__nav-bar__menu {
+    display: flex;
+    align-items: center;    
+}
+.header__nav-bar__menu ul li {
+    display: inline;
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #474747;
+    margin-right: 2.5rem;
+}
+.btn {
+    border: none;
+    border-radius: 0.25rem;
+    background: #FD6E0A;
+    padding: 0.9rem 2rem;
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 600;
+}
+/* navbar section end */
+
+.header__banar {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.header__banar__personal-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.sub-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.title {
+    font-size: 85px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.description {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 1rem;
+}
+.btn-cv {
+    margin-right: 1.5rem;
+}
+.btn-contact {
+    background: none;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+}
+.header__banar__photo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+.header__banar__photo img {
+    width: 450px;
+}
