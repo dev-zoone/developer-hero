@@ -59,6 +59,7 @@ ul li a {
 }
 /* navbar section end */
 
+/* Header Banar */
 .header__banar {
     width: 80%;
     height: 500px;
@@ -132,6 +133,7 @@ main {
     margin-bottom: 2rem;
     line-height: 30px;
 }
+/* About Me */
 .content-about__info-container {
     display: flex;
     align-items: center;
@@ -154,7 +156,7 @@ main {
     font-weight: 700;
 }
 
-/* ----------------------------------- */
+/* --- What i do --- */
 .content-what-do {
     background: none;
     margin-top: 0;
@@ -185,7 +187,7 @@ main {
     margin: 2rem 3rem !important;
 }
 
-/* ------------------------------------ */
+/* --- Resume style--- */
 .content-resume {
     background: none;
     margin-top: 0;
