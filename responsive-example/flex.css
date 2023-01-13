@@ -55,16 +55,13 @@ img {
     }
     .secound-row,
     .third-row {
-        display: flex;
         flex-direction: column;
     }
     .secound-row .secound-part {
-        display: grid;
         grid-template-rows: 100%;
     }
     
     .third-row .four-part {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }

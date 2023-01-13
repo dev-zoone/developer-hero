@@ -1,0 +1,39 @@
+/* defined grid areas */
+
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: nav;
+}
+.main {
+    grid-area: main;
+}
+.aside {
+    grid-area: aside;
+}
+.ad {
+    grid-area: ad;
+}
+.footer {
+    grid-area: footer;
+}
+.header, .nav, .main, .aside, .ad, .footer {
+    padding: 1rem;
+    background: salmon;
+}
+
+/* grid layout style */
+
+.grid-leyout {
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main    main    aside"
+    "nav    main    main    ad"
+    "footer footer footer footer"
+    ;
+}
