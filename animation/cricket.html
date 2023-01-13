@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Transition</title>
+    <style>
+        .bat {
+            width: 10px;
+            height: 400px;
+            /* margin-left: 200px; */
+            
+            background-color: aqua;
+            transform: translate(200px, 0) rotate(35deg);
+            transition: transform 0.2s ease-in;
+        }
+        .field:hover .bat {
+            transform: translate(200px, 100px) rotate(-45deg);
+            transform-origin: top left;
+        }
+        
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: brown;
+            transform: translate(400px, -150px);
+            transition: transform 1s ease-in-out 0.2s;
+        }
+        .field:hover .ball {
+            transform: translate(1200px, -320px);
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <div class="bat"></div>
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .range {
+            width: 600px;
+            height: 400px;
+            margin: 7% auto;
+            background: #343434;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            background-color: rgb(255, 20, 145);
+            animation: sliding 2s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes sliding {
+            0% {
+                background: rgb(255, 20, 145);
+            }
+            25% {
+                background-color: rgba(255, 20, 140, .6);
+                scale: .8;
+                left: 100px;
+                top: 300px;
+            }
+            50% {
+                background: rgba(216, 20, 255, 0.795);
+                scale: .5;
+                left: 250px;
+                top: 0;
+            }
+            75% {
+                background: rgba(20, 255, 224, 0.6);
+                scale: .8;
+                left: 400px;
+                top: 300px;
+            }
+            100% {
+                background: rgb(255, 20, 145);
+                scale: 1;
+                left: 500px;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="range">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>
