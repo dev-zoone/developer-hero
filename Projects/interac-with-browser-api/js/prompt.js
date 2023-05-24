@@ -1,4 +1,4 @@
-// alert('how are you');
+f// alert('how are you');
 
 const showalert = () => {
     alert('dosto taka lagbe dhar dite parbi. just 5000?');
